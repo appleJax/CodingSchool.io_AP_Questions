@@ -23,7 +23,7 @@ public class RandomStringChooser {
 		
 		int randomIndex = (int) (Math.random() * availableStrings.size());
 		String result = availableStrings.get(randomIndex);
-		availableStrings.remove(result);
+		availableStrings.remove(randomIndex);
 
 		return result;
 	}

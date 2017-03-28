@@ -25,7 +25,7 @@ public class RandomLetterChooser extends RandomStringChooser {
 		int randomIndex = (int) (Math.random() * internalString.size());
 		
 		String character = internalString.get(randomIndex);
-		internalString.remove(character);
+		internalString.remove(randomIndex);
 		
 		return character;
 	}
